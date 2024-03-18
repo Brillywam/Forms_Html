@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORMS IN HTML</title>
+    </head>
+    <body>
+        <form action="processing.php" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="john@mail.com" aria-invalid="true">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" aria-describedby="password-hint">
+            <div id="password-hint">Password must be at least 8 characters long.</div>
+        
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="file" accept="pdf">
+            <br>
+            <input type="checkbox" id="" value="I am a student">
+            <label for="student">I am a student</label>
+            <br>
+            <legend>Gender:</legend>
+            <input type="radio" id="gender" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="gender" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br>
+            <legend>What are your interests?</legend>
+            <input type="checkbox" name="interest" id="music" value="music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="sports" name="interest" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" name="interest" id="reading" value="reading">
+            <label for="reading">Reading</label>
+            <br>
+
+            <label for="car">Select a car model:</label>
+            <select id="car" name="car">
+                <option value=""></option>
+                <option value="Toyota">Toyota</option>
+                <option value="Mistubishi">Mistubishi</option>
+                <option value="Mazda">Mazda</option>
+            </select>
+            <br>
+            <label for="textarea">Type in your bio</label>
+            <br>
+            <textarea name="bio" id="bio" cols="30" rows="10" maxlength="100">
+            </textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
